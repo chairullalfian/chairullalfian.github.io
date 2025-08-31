@@ -27,7 +27,7 @@ nav {
 
 nav > .wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 1.2rem;
     color: #ffffff;
     align-items: center;
@@ -530,7 +530,7 @@ footer > .wrapper {
 
 @media only screen and (max-width: 600px) {
     nav > .wrapper {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
     .Menu {
@@ -538,7 +538,8 @@ footer > .wrapper {
         margin-top: 10px;
     }
     .Menu > ul {
-        flex-direction: column;
+        flex-direction: row;
+        margin-left: 50px;
         row-gap: 10px;
     }
     .grid {
@@ -557,14 +558,20 @@ footer > .wrapper {
         width: 100%;
     }
     #more > .wrapper > div > .foto {
-        width: 50%;
+        width: 97%;
         margin-bottom: 20px;
     }
+    #more > .wrapper > div > .foto > img {
+        max-width: 100%;
+    }
     #more > .wrapper > div > .desc {
-        width: 100%;
+        width: 90%;
         margin: 0px;
     }
-
+    #more > .wrapper > div > .desc > .social {
+        padding-top: 10px;
+        margin: auto;
+    }
     #project > .wrapper > .grid > .item-detail > div {
         padding: 5px 10px 5px 10px;
     }
