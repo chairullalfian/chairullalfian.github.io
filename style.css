@@ -27,7 +27,7 @@ nav {
 
 nav > .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 1.2rem;
     color: #ffffff;
     align-items: center;
@@ -36,7 +36,7 @@ nav > .wrapper {
 }
 
 .Menu {
-    width: 30%;
+    width: 50%;
 }
 
 .Menu > ul {
@@ -440,5 +440,132 @@ footer {
 
 footer > .wrapper {
     padding: 30px 0px 30px 0px;
-    
+}
+
+/*
+* 1024, 900, 768, 600, 450
+*/
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;        
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header-jumbotron > h4 {
+        font-size: 1.8rem;
+    }
+    .header-jumbotron > h5 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .header-jumbotron > p {
+        font-size: 1rem;
+        margin: 10px 0px 10px 0px;
+        padding: 10px;
+    }
+    .button {
+        padding: 8px;
+    }
+    .buttons {
+        padding: 8px;
+    }
+    .button-xl {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+    .buttons-xl {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    #statistic > .wrapper > div > p {
+        font-size: 2rem;
+    }
+    #statistic > .wrapper > div > p > i {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Menu {
+        width: 60%;
+    }
+    .header-jumbotron > h4 {
+        font-size: 1.5rem;
+    }
+    .header-jumbotron > h5 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .header-jumbotron > p {
+        font-size: 0.9rem;
+        margin: 5px 0px 5px 0px;
+        padding: 5px;
+    }
+    .button {
+        padding: 5px;
+    }
+    .buttons {
+        padding: 5px;
+    }
+    .button-xl {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .buttons-xl {
+        font-size: 0.5rem;
+        padding: 10px;
+    }
+
+    #statistic > .wrapper > div > p {
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+    #statistic > .wrapper > div > p > i {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav > .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Menu {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .Menu > ul {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .grid {
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+    }
+    .item > img {
+        width: 10%;
+    }
+    .items > img {
+        width: 10%;
+    }
+
+    #more > .wrapper > div {
+        flex-direction: column;
+        width: 100%;
+    }
+    #more > .wrapper > div > .foto {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    #more > .wrapper > div > .desc {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #project > .wrapper > .grid > .item-detail > div {
+        padding: 5px 10px 5px 10px;
+    }
 }
